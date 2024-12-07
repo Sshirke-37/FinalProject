@@ -10,8 +10,7 @@
     $rows=mysqli_fetch_assoc($name);
     $sql2="select *from cars where AVAILABLE='Y'";
     $cars= mysqli_query($con,$sql2);
-    
-    // $row=mysqli_fetch_assoc($cars);
+
     
     
     ?>
@@ -33,9 +32,9 @@
         <h2 class="logo">CaRental</h2>
         <div class="menu">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="aboutus2.html">ABOUT</a></li>
-                <li><a href="contactus2.html">CONTACT</a></li>
+                <li><a href="cardetails.php">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT</a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
                 <li><a href="feedback/Feedbacks.php">FEEDBACK</a></li>
                 <li><a href="bookinstatus.php">BOOKING STATUS</a></li>
                 <li><a class="button" href="index.php">LOGOUT</a></li>

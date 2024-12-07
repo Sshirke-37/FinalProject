@@ -34,10 +34,6 @@ if(isset($_POST['submit'])){
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-image: url('Home%20page%20pics/background1.jpeg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
             padding: 50px 0;
             margin: 0;
             color: #333;
@@ -60,7 +56,7 @@ if(isset($_POST['submit'])){
         }
 
         .feedback-header .highlight {
-            color: #ff7200;
+            color: #3b82f6;
             font-weight: bold;
         }
 
@@ -92,7 +88,7 @@ if(isset($_POST['submit'])){
 
         .feedback-form .btn-submit {
             width: 100%;
-            background-color: #ff7200;
+            background-color: #3b82f6;
             border: none;
             padding: 14px;
             font-size: 18px;
@@ -108,7 +104,7 @@ if(isset($_POST['submit'])){
 
 
         .back-btn {
-            background-color: #ff7200;
+            background-color: #3b82f6;
             color: #fff;
             padding: 10px 20px;
             font-size: 16px;

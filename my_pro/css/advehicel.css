@@ -1,136 +1,159 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-    color: #3d4852;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        
 
-/* Navbar Styling */
-.navbar {
-    background-color: #3b82f6;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .navbar {
+            background: #3b82f6;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .navbar .menu ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .navbar .menu ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        
+        .navbar .menu ul li a:hover {
+            color: #dbeafe;
+        }
+        
 
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-}
+        .header {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #1e293b;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        
 
-.navbar .menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+        .add {
+            display: block;
+            margin: 0 auto 30px;
+            padding: 10px 20px;
+            background: #3b82f6;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            text-align: center;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        
+        .add a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .add:hover {
+            background: #2563eb;
+        }
+        
 
-.navbar .menu ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.navbar .menu ul li a:hover {
-    color: #d1d5db;
-}
-
-.header {
-    text-align: center;
-    font-size: 36px;
-    color: #1e293b;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-/* Add Car Button */
-.add {
-    display: block;
-    width: fit-content;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #3b82f6;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.add a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.add:hover {
-    background-color: #2563eb;
-}
-
-/* Content Table Styling */
-.content-table {
-    width: 90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.content-table thead {
-    background-color: #3b82f6;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.content-table th,
-.content-table td {
-    padding: 12px 15px;
-    text-align: center;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.content-table tbody tr {
-    transition: background-color 0.3s;
-}
-
-.content-table tbody tr:nth-of-type(even) {
-    background-color: #f8fafc;
-}
-
-.content-table tbody tr:hover {
-    background-color: #f1f5f9;
-}
-
-/* Delete Button Styling */
-.but {
-    background-color: #ef4444;
-    color: #ffffff;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-weight: bold;
-}
-
-.but a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.but:hover {
-    background-color: #dc2626;
-}
+        .content-table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content-table th,
+        .content-table td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .content-table thead th {
+            background-color: #3b82f6;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        
+        .content-table tbody tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        
+        .content-table tbody tr:hover {
+            background-color: #e2e8f0;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        .content-table tbody td {
+            font-size: 14px;
+            color: #4b5563;
+        }
+        
+        .content-table .but {
+            padding: 6px 12px;
+            background: #ef4444;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .content-table .but:hover {
+            background: #dc2626;
+        }
+        
+        .content-table .but a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar .menu ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        
+            .content-table {
+                font-size: 12px;
+            }
+        
+            .add {
+                width: 80%;
+            }
+        }

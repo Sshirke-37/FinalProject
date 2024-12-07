@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/reg.css">
     <title>Registration</title>
     <script type="text/javascript">
         window.history.forward();
@@ -9,6 +10,7 @@
             window.history.forward();
         }
     </script>
+    
     <script type="text/javascript">
         function preventBack() {
             window.history.forward();
@@ -18,7 +20,27 @@
 
         window.onunload = function () { null };
     </script>
-    <link rel="stylesheet" href="css/reg.css" type="text/css">
+    <style>
+        body {
+        background: linear-gradient(135deg, #1e293b, #3b82f6);
+        }
+        .link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.link a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+    </style>
 </head>
 
 <body>
@@ -37,16 +59,16 @@
         $gender = mysqli_real_escape_string($con, $_POST['gender']);
         $Pass = md5($pass);
 
-        // Check if email already exists
+      
         $checkEmailQuery = "SELECT * FROM users WHERE EMAIL = '$email'";
         $emailResult = mysqli_query($con, $checkEmailQuery);
 
         if (mysqli_num_rows($emailResult) > 0) {
-            // Email already exists
+           
             echo '<script>alert("Registration successful! Please login.")</script>';
             echo '<script>window.location.href = "index.php";</script>';
         } else {
-            // Proceed with registration if email is unique
+
             if ($pass === $cpass) {
                 $sql = "INSERT INTO users (FNAME, LNAME, EMAIL, LIC_NUM, PHONE_NUMBER, PASSWORD, GENDER)
                     VALUES ('$fname', '$lname', '$email', '$lic', '$ph', '$Pass', '$gender')";
@@ -108,14 +130,13 @@
 
                 <button type="submit" class="btnn" name="regs">Register</button>
                 <p class="link">Already have an account?<br>
-                    <a href="login.php">Log In</a> here</a>
+                    <a href="login.php">Log In</a> here
                 </p>
             </form>
         </div>
     </div>
 
     <script>
-        // Allow only numeric input for phone number
         function onlyNumberKey(evt) {
             var ASCIICode = (evt.which) ? evt.which : evt.keyCode;
             if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) {
@@ -124,7 +145,6 @@
             return true;
         }
 
-        // Password match validation before form submission
         document.getElementById("register").onsubmit = function (event) {
             const pass = document.querySelector("input[name='pass']").value;
             const cpass = document.querySelector("input[name='cpass']").value;

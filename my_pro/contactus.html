@@ -579,6 +579,7 @@ body {
     </style>
 </head>
 <body>
+  <form action="send_email.php" method="POST">
     <div class="contact_us_green">
         <div class="responsive-container-block big-container">
           <div class="responsive-container-block container">
@@ -596,37 +597,39 @@ body {
                   <div class="responsive-container-block">
                     <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-6">
                       <p class="text-blk input-title">
-                        FIRST NAME
+                        <label for="firstName">First Name</label>
                       </p>
-                      <input class="input" id="ijowk-6" name="FirstName">
+                      <input class="input" type="text" id="firstName" name="firstName" required>
                     </div>
                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                       <p class="text-blk input-title">
-                        LAST NAME
+                        <label for="lastName">Last Name</label>
                       </p>
-                      <input class="input" id="indfi-4" name="Last Name">
+                      <input class="input" type="text" id="lastName" name="lastName" required>
                     </div>
                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                       <p class="text-blk input-title">
-                        EMAIL
+                        <label for="email">Email</label>
                       </p>
-                      <input class="input" id="ipmgh-6" name="Email">
+                      <input class="input" type="email" id="email" name="email" required>
                     </div>
                     <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                       <p class="text-blk input-title">
-                        PHONE NUMBER
+
+                        <label for="phoneNumber">Phone Number</label>
                       </p>
-                      <input class="input" id="imgis-5" name="PhoneNumber">
+                      <input class="input" type="text" id="phoneNumber" name="phoneNumber" required>
                     </div>
                     <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-6">
                       <p class="text-blk input-title">
-                        WHAT DO YOU HAVE IN MIND
+
+                        <label for="message">Message</label>
                       </p>
-                      <textarea class="textinput" id="i5vyy-6" placeholder="Please enter query..."></textarea>
+                      <textarea class="textinput" id="message" name="message" placeholder="Please enter query..." required></textarea>
                     </div>
                   </div>
                   <div class="btn-wrapper">
-                    <button class="submit-btn">
+                    <button class="submit-btn" type="submit">
                       Submit
                     </button>
                   </div>
@@ -683,6 +686,7 @@ body {
             </div>
           </div>
         </div>
-      </div>    
+      </div>  
+    </form>  
 </body>
 </html>

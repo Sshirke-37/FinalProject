@@ -1,21 +1,137 @@
-CaRental- A car renting platform
 
-In the present world, not every person can afford to buy a personal car. 
-Car Rental System provides car/cars on rent to people who don’t own their personal vehicle for short term usage, travel plans. 
-Renting a car gives flexibility and convenience of having a ride whenever needed without the need of owning one. 
-Small duration-based vehicles are easy to get in touch with by contacting car rental agencies and making an agreement for a short-time period usage. 
-A good Car Rental system helps achieve high customer satisfaction levels, easy Management of Booking process as well as fleet/staff management.
+<h1 align="center">Car Rental Website Project</h1>  
 
-Carental will offer an easily accessible site where customers can register for accounts, search through lists of cars, book and pay for cars online. 
-Administrators will have control over car listing, where bookings are tracked and approval and rejection of request of users.
+This is a project for a car rental website. It is a project for the College Mini Project.
 
-The objective is to develop a computerized system that will appear as a web-based solution, making car rentals easier for customers and the company.
-The system shall enable:
+## Table of Contents
 
-•	Facilitate easy and efficient customer registration and car reservation.
-•	Streamline the renting process through a fully computerized system, doing away with paper work forms; this reduces paperwork and, therefore, administrative overhead.
-•	It should assist in creating a more customer-friendly car renting platform for clients with minimal work possible.
-•	Processing should be faster, and access to vehicles should be quicker for users to acquire the preferred cars as fast as possible.
-•	It should assist the company in managing its rental business effectively, such as tracing the vehicle, reservation, and customer details to eliminate the need for optimizing operations and service quality.
+- [Table of Contents](#table-of-contents)
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Database](#database)
+- [Table](#table)
+- [Car Listing Page](#car-listing-page)
+- [User Story](#user-story)
+- [Admin Page](#admin-page)
+- [Project Report](#project-report)
+- [License](#license)
+- [Demo](#demo)
+- [Authors](#authors)
+- [Show your support](#show-your-support)
+
+
+## Introduction
+
+- This is a car rental website project.
+- The purpose of this project is to create a car rental website.
+- The website will have a login page, a car listing page, a car reservation page, and a car return page.
+- The login page will have a username and password input field.
+- The car listing page will have a search bar and a car listing table.
+- The car reservation page will have a car reservation table.
+
+## Requirements
+
+- XAMPP is required to run the project.
+- The project will be hosted on a localhost server.
+
+##  Installation
+
+- Install XAMPP.
+- Open XAMPP and click on the Start button.
+- Clone the project to the root of the XAMPP server.
+- Open the project in XAMPP.
+- Import SQL file from database folder to the XAMPP server.
+- Open Browser and navigate to [localhost:8080](localhost:8080).
+- Hurray! The project is now running.
+
+##  Database
+
+- The database is stored in a folder called database.
+- The database is named as carproject.sql.
+- The database is stored in the root of the XAMPP server.
+- The database is imported to the XAMPP server.
+- Database used is MySQL.
+- Database Connection page is named [connection.php](/connection.php).
+
+## Table
+
+- The table is named as car.
+- The table has the following columns:
+    - car_id: INTEGER PRIMARY KEY AUTO_INCREMENT
+    - car_make: VARCHAR(255)
+    - car_model: VARCHAR(255)
+    - car_year: INTEGER
+    - car_color: VARCHAR(255)
+    - car_price: INTEGER
+    - car_available: BOOLEAN
+    - car_image: VARCHAR(255)
+    - car_description: VARCHAR(255)
+
+##  Car Listing Page
+
+- The car listing page will have a search bar and a car listing table.
+- The search bar will have a search button.
+- The search button will search for the car based on the search bar input.
+- The car shown only on the car listing page will be the car that is available.
+
+## User Story
+
+- As a user, I want to be able to search for a car.
+- As a user, I want to be able to see the car that is available.
+- As a user, I want to be able to reserve a car.
+- As a user, I want to be able to return a car.
+- As a user, I want to be able to see the car that I have reserved.
+- As a user, I want to provide feedback to the car rental website.
+- As a user, I should be able to make payment for the car rental.
+
+## Admin Page
+
+- The admin page will have a car listing table.
+- It has a button to add a new car.
+- The button will open a new page where the admin can add a new car.
+- The admin can add a new car by filling in the form.
+- The admin can also delete a car by clicking the delete button.
+- Admin can view user reservation by clicking the view button.
+- Admin can view user return by clicking the view button.
+- Admin can accept or reject a reservation by clicking the accept or reject button.
+- Admin can return a car by clicking the return button.
+- Admin can delete a reservation by clicking the delete button.
+- Admin can view feedback by clicking the view button.
+
+## Project Report
+
+- The project report is stored in a folder called [report](https://github.com/Varshithvhegde/car_rental_project/raw/main/report/CarProjectFinalReport.pdf).
+- Report consists of the following:
+    - Introduction
+    - Literature Review
+    - Methodology
+    - Result
+    - Conclusion
+    - References
+- The project report is written in Microsoft Word.
+- The project repot has flow chart, ERD, and UML diagram.
+
+##  License
+
+[MIT](https://choosealicense.com/licenses/mit/) © [Varshith Hegde](https://github.com/Varshithvhegde)
+- This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Demo
+
+- [Live Deployment](https://carsminiproject.000webhostapp.com/)
+- [Video Demo](https://youtu.be/1Z9Z9Z9Z9Z9)
+
+## Authors 
+
+- [Varshith V Hegde](https://github.com/Varshithvhegde)
+- [Swasthik Jain PM](https://github.com/Swasthik-Jain)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+
 
 

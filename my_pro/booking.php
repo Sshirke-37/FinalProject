@@ -61,7 +61,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Booking</title>
-    <link rel="stylesheet" href="css/style2.css">
     <script type="text/javascript">
         function preventBack() {
             window.history.forward();
@@ -74,34 +73,177 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style2.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3b82f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    color: #003366;
+}
+
+nav {
+    background-color: #3b82f6;
+    padding: 15px 0;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-content .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-content .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-content .menu a:hover {
+    color: #FFD700;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 51, 102, 0.1);
+}
+
+.search-form h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #003366;
+}
+
+.search-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #003366;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group label {
+    font-size: 18px;
+    color: #003366;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-style {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.input-style:focus {
+    border-color: #003366;
+    box-shadow: 0 0 8px rgba(0, 51, 102, 0.3);
+}
+
+.search-btn {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #004488;
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .navbar-content .logo {
+        font-size: 20px;
+    }
+
+    .navbar-content .menu a {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-form {
+        padding: 10px;
+    }
+
+    .search-form h2 {
+        font-size: 28px;
+    }
+
+    .search-form h3 {
+        font-size: 20px;
+    }
+
+    .search-btn {
+        font-size: 16px;
+    }
+}
+
+    </style>
 </head>
 
 <body>
-    <!-- Navbar Section -->
-    <!-- <div class="navbar-content">
-        <h2 class="logo">CaRental</h2>
-        <div class="menu">
-            <ul>
-                <li><a href="cardetails.php">HOME</a></li>
-                <li><a href="aboutus2.html">ABOUT</a></li>
-                <li><a href="contactus2.html">CONTACT</a></li>
-                <li><a href="index.html">LOGOUT</a></li>
-            </ul>
-        </div>
-    </div> -->
     <nav>
         <div class="navbar-content">
             <div class="logo">CaRental</div>
             <div class="menu">
                 <nav class="space-x-6">
-                    <a href="index.php" class="text-gray-700 hover:text-blue-500">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-blue-500">Contact</a>
+                    <a href="cardetails.php" class="text-gray-700 hover:text-blue-500">Home</a>
+                    <a href="contactus.html" class="text-gray-700 hover:text-blue-500">Contact</a>
                 </nav>
             </div>
         </div>
     </nav>
 
-    <!-- Booking Form Section -->
     <div class="search-form">
         <h2>Car Booking</h2>
         <form id="register" method="POST">
